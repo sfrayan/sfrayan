@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 165" width="900" height="165">
+
+<!-- ═══ STATS CARD (left) ═══ -->
+<rect x="0" y="0" width="440" height="165" rx="6" fill="#1a1b27" stroke="#2e2f3e" stroke-width="1"/>
+<text x="16" y="26" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#c0caf5">GitHub Stats</text>
+<line x1="16" y1="34" x2="424" y2="34" stroke="#2e2f3e" stroke-width="1"/>
+
+<!-- Row 1: Total Contributions -->
+<g opacity="0">
+  <animate attributeName="opacity" to="1" dur="0.3s" begin="0.2s" fill="freeze"/>
+  <circle cx="26" cy="50" r="3" fill="#70a5fd"/>
+  <text x="36" y="54" font-family="system-ui,sans-serif" font-size="11" fill="#a9b1d6">Total Contributions</text>
+  <text x="424" y="54" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#70a5fd" text-anchor="end">369</text>
+</g>
+<line x1="16" y1="66" x2="424" y2="66" stroke="#2e2f3e" stroke-width="0.5" opacity="0.5"/>
+
+<!-- Row 2: Active Since -->
+<g opacity="0">
+  <animate attributeName="opacity" to="1" dur="0.3s" begin="0.5s" fill="freeze"/>
+  <circle cx="26" cy="83" r="3" fill="#70a5fd"/>
+  <text x="36" y="87" font-family="system-ui,sans-serif" font-size="11" fill="#a9b1d6">Active Since</text>
+  <text x="424" y="87" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#70a5fd" text-anchor="end">Dec 18, 2023</text>
+</g>
+<line x1="16" y1="99" x2="424" y2="99" stroke="#2e2f3e" stroke-width="0.5" opacity="0.5"/>
+
+<!-- Row 3: Longest Streak -->
+<g opacity="0">
+  <animate attributeName="opacity" to="1" dur="0.3s" begin="0.8s" fill="freeze"/>
+  <circle cx="26" cy="116" r="3" fill="#ff9e64"/>
+  <text x="36" y="120" font-family="system-ui,sans-serif" font-size="11" fill="#a9b1d6">Longest Streak</text>
+  <text x="424" y="120" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#ff9e64" text-anchor="end">4 days</text>
+</g>
+<line x1="16" y1="132" x2="424" y2="132" stroke="#2e2f3e" stroke-width="0.5" opacity="0.5"/>
+
+<!-- Row 4: Focus Area -->
+<g opacity="0">
+  <animate attributeName="opacity" to="1" dur="0.3s" begin="1.1s" fill="freeze"/>
+  <circle cx="26" cy="149" r="3" fill="#bb9af7"/>
+  <text x="36" y="153" font-family="system-ui,sans-serif" font-size="11" fill="#a9b1d6">Focus</text>
+  <text x="424" y="153" font-family="system-ui,sans-serif" font-size="11" fill="#bb9af7" text-anchor="end">Security · Networks · Cloud</text>
+</g>
+
+<!-- ═══ LANGUAGES CARD (right) ═══ -->
+<rect x="460" y="0" width="440" height="165" rx="6" fill="#1a1b27" stroke="#2e2f3e" stroke-width="1"/>
+<text x="476" y="26" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#c0caf5">Top Languages</text>
+<line x1="476" y1="34" x2="884" y2="34" stroke="#2e2f3e" stroke-width="1"/>
+
+<!-- Python 35% -->
+<text x="476" y="52" font-family="system-ui,sans-serif" font-size="11" fill="#a9b1d6">Python</text>
+<text x="884" y="52" font-family="system-ui,sans-serif" font-size="10" fill="#3572A5" text-anchor="end">35%</text>
+<rect x="560" y="44" width="310" height="6" rx="3" fill="#2e2f3e"/>
+<rect x="560" y="44" width="0" height="6" rx="3" fill="#3572A5">
+  <animate attributeName="width" from="0" to="109" dur="0.8s" begin="0.1s" fill="freeze"/>
+</rect>
+
+<!-- JavaScript 25% -->
+<text x="476" y="77" font-family="system-ui,sans-serif" font-size="11" fill="#a9b1d6">JavaScript</text>
+<text x="884" y="77" font-family="system-ui,sans-serif" font-size="10" fill="#f1e05a" text-anchor="end">25%</text>
+<rect x="560" y="69" width="310" height="6" rx="3" fill="#2e2f3e"/>
+<rect x="560" y="69" width="0" height="6" rx="3" fill="#f1e05a">
+  <animate attributeName="width" from="0" to="78" dur="0.8s" begin="0.3s" fill="freeze"/>
+</rect>
+
+<!-- C++ 20% -->
+<text x="476" y="102" font-family="system-ui,sans-serif" font-size="11" fill="#a9b1d6">C++</text>
+<text x="884" y="102" font-family="system-ui,sans-serif" font-size="10" fill="#f34b7d" text-anchor="end">20%</text>
+<rect x="560" y="94" width="310" height="6" rx="3" fill="#2e2f3e"/>
+<rect x="560" y="94" width="0" height="6" rx="3" fill="#f34b7d">
+  <animate attributeName="width" from="0" to="62" dur="0.8s" begin="0.5s" fill="freeze"/>
+</rect>
+
+<!-- HTML 12% -->
+<text x="476" y="127" font-family="system-ui,sans-serif" font-size="11" fill="#a9b1d6">HTML</text>
+<text x="884" y="127" font-family="system-ui,sans-serif" font-size="10" fill="#e34c26" text-anchor="end">12%</text>
+<rect x="560" y="119" width="310" height="6" rx="3" fill="#2e2f3e"/>
+<rect x="560" y="119" width="0" height="6" rx="3" fill="#e34c26">
+  <animate attributeName="width" from="0" to="37" dur="0.8s" begin="0.7s" fill="freeze"/>
+</rect>
+
+<!-- CSS 8% -->
+<text x="476" y="152" font-family="system-ui,sans-serif" font-size="11" fill="#a9b1d6">CSS</text>
+<text x="884" y="152" font-family="system-ui,sans-serif" font-size="10" fill="#c792ea" text-anchor="end">8%</text>
+<rect x="560" y="144" width="310" height="6" rx="3" fill="#2e2f3e"/>
+<rect x="560" y="144" width="0" height="6" rx="3" fill="#c792ea">
+  <animate attributeName="width" from="0" to="25" dur="0.8s" begin="0.9s" fill="freeze"/>
+</rect>
+
+</svg>
