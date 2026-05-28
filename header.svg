@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="900" height="220">
+<defs>
+  <radialGradient id="hg" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#79c0ff"/>
+    <stop offset="100%" stop-color="#1f6feb"/>
+  </radialGradient>
+
+  <!-- Clip paths for terminal text reveal (typing effect) -->
+  <clipPath id="cp1"><rect x="42" y="61" height="17" width="0">
+    <animate attributeName="width" from="0" to="90" dur="0.65s" begin="0.3s" fill="freeze"/>
+  </rect></clipPath>
+
+  <clipPath id="cp2"><rect x="42" y="83" height="17" width="0">
+    <animate attributeName="width" from="0" to="80" dur="0.4s" begin="1.1s" fill="freeze"/>
+  </rect></clipPath>
+
+  <clipPath id="cp3"><rect x="42" y="105" height="17" width="0">
+    <animate attributeName="width" from="0" to="130" dur="0.8s" begin="1.6s" fill="freeze"/>
+  </rect></clipPath>
+
+  <clipPath id="cp4"><rect x="42" y="127" height="17" width="0">
+    <animate attributeName="width" from="0" to="310" dur="1.4s" begin="2.5s" fill="freeze"/>
+  </rect></clipPath>
+
+  <clipPath id="cp5"><rect x="42" y="149" height="17" width="0">
+    <animate attributeName="width" from="0" to="340" dur="1.2s" begin="4.0s" fill="freeze"/>
+  </rect></clipPath>
+</defs>
+
+<!-- Background -->
+<rect width="900" height="220" fill="#0d1117"/>
+
+<!-- ═══════════════ TERMINAL (left) ═══════════════ -->
+<rect x="18" y="14" width="490" height="196" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+<!-- Title bar -->
+<rect x="18" y="14" width="490" height="32" rx="8" fill="#21262d"/>
+<rect x="18" y="32" width="490" height="14" fill="#21262d"/>
+<!-- Traffic light dots -->
+<circle cx="38" cy="30" r="5" fill="#ff5f57"/>
+<circle cx="56" cy="30" r="5" fill="#ffbd2e"/>
+<circle cx="74" cy="30" r="5" fill="#28c840"/>
+<text x="258" y="34" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">bash — sfrayan</text>
+
+<!-- Line 1: $ whoami -->
+<text x="42" y="74" font-family="'Courier New',Courier,monospace" font-size="13" clip-path="url(#cp1)"><tspan fill="#39d353">$</tspan><tspan fill="#c9d1d9"> whoami</tspan></text>
+
+<!-- Line 2: sfrayan (output) -->
+<text x="42" y="96" font-family="'Courier New',Courier,monospace" font-size="13" fill="#79c0ff" clip-path="url(#cp2)">sfrayan</text>
+
+<!-- Line 3: $ echo $ROLE -->
+<text x="42" y="118" font-family="'Courier New',Courier,monospace" font-size="13" clip-path="url(#cp3)"><tspan fill="#39d353">$</tspan><tspan fill="#c9d1d9"> echo $ROLE</tspan></text>
+
+<!-- Line 4: Networks & Cybersecurity Student -->
+<text x="42" y="140" font-family="'Courier New',Courier,monospace" font-size="13" fill="#e6edf3" clip-path="url(#cp4)">Networks &amp; Cybersecurity Student</text>
+
+<!-- Line 5: Infrastructure · Cloud · Full-Stack -->
+<text x="42" y="162" font-family="'Courier New',Courier,monospace" font-size="13" fill="#8b949e" clip-path="url(#cp5)">Infrastructure · Cloud · Full-Stack</text>
+
+<!-- Final prompt $ (appears at 5.3s) -->
+<text x="42" y="184" font-family="'Courier New',Courier,monospace" font-size="13" opacity="0">
+  <tspan fill="#39d353">$</tspan>
+  <animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="5.3s" fill="freeze"/>
+</text>
+
+<!-- Blinking cursor (starts at 5.3s) -->
+<rect x="58" y="171" width="7" height="15" fill="#39d353" rx="1" opacity="0">
+  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="0.9s" begin="5.3s" repeatCount="indefinite"/>
+</rect>
+
+<!-- ═══════════════ NETWORK GRAPH (right) ═══════════════ -->
+<text x="706" y="32" font-family="system-ui,-apple-system,sans-serif" font-size="9" fill="#8b949e" text-anchor="middle" letter-spacing="2">NETWORK MONITOR</text>
+
+<!-- Edges: normal nodes to hub -->
+<line x1="638" y1="66" x2="706" y2="112" stroke="#30363d" stroke-width="1.5"/>
+<line x1="774" y1="66" x2="706" y2="112" stroke="#30363d" stroke-width="1.5"/>
+<line x1="774" y1="158" x2="706" y2="112" stroke="#30363d" stroke-width="1.5"/>
+<!-- Edge: anomaly to hub (dashed orange) -->
+<line x1="638" y1="158" x2="706" y2="112" stroke="#f97316" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+
+<!-- Hub pulse rings (3 staggered) -->
+<circle cx="706" cy="112" r="15" fill="none" stroke="#58a6ff" stroke-width="1.5">
+  <animate attributeName="r" values="15;55" dur="2.5s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.6;0" dur="2.5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="706" cy="112" r="15" fill="none" stroke="#58a6ff" stroke-width="1">
+  <animate attributeName="r" values="15;55" dur="2.5s" begin="0.83s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.4;0" dur="2.5s" begin="0.83s" repeatCount="indefinite"/>
+</circle>
+<circle cx="706" cy="112" r="15" fill="none" stroke="#58a6ff" stroke-width="0.8">
+  <animate attributeName="r" values="15;55" dur="2.5s" begin="1.67s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.25;0" dur="2.5s" begin="1.67s" repeatCount="indefinite"/>
+</circle>
+
+<!-- Hub node -->
+<circle cx="706" cy="112" r="15" fill="url(#hg)" stroke="#79c0ff" stroke-width="2"/>
+<!-- Hub icon (mini network symbol) -->
+<circle cx="706" cy="108" r="2.5" fill="white"/>
+<circle cx="700" cy="116" r="1.8" fill="white"/>
+<circle cx="712" cy="116" r="1.8" fill="white"/>
+<line x1="706" y1="108" x2="700" y2="116" stroke="white" stroke-width="1.2"/>
+<line x1="706" y1="108" x2="712" y2="116" stroke="white" stroke-width="1.2"/>
+<text x="706" y="136" font-family="system-ui,sans-serif" font-size="9" fill="#58a6ff" text-anchor="middle">firewall</text>
+
+<!-- Normal node: top-left -->
+<circle cx="638" cy="66" r="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<circle cx="638" cy="66" r="3" fill="#3fb950"/>
+<text x="638" y="84" font-family="system-ui,sans-serif" font-size="9" fill="#6e7681" text-anchor="middle">host-01</text>
+
+<!-- Normal node: top-right -->
+<circle cx="774" cy="66" r="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<circle cx="774" cy="66" r="3" fill="#3fb950"/>
+<text x="774" y="84" font-family="system-ui,sans-serif" font-size="9" fill="#6e7681" text-anchor="middle">host-02</text>
+
+<!-- Normal node: bottom-right -->
+<circle cx="774" cy="158" r="8" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<circle cx="774" cy="158" r="3" fill="#3fb950"/>
+<text x="774" y="176" font-family="system-ui,sans-serif" font-size="9" fill="#6e7681" text-anchor="middle">srv-01</text>
+
+<!-- Anomaly node: bottom-left (orange, pulsing) -->
+<circle cx="638" cy="158" r="9" fill="#1c0e07" stroke="#f97316" stroke-width="2"/>
+<circle cx="638" cy="158" r="9" fill="none" stroke="#f97316" stroke-width="1.5">
+  <animate attributeName="r" values="9;18;9" dur="1.5s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0.7;0;0.7" dur="1.5s" repeatCount="indefinite"/>
+</circle>
+<text x="638" y="162" font-family="system-ui,sans-serif" font-size="10" fill="#f97316" text-anchor="middle" font-weight="bold">!</text>
+<text x="638" y="176" font-family="system-ui,sans-serif" font-size="9" fill="#f97316" text-anchor="middle">anomaly</text>
+
+<!-- ── Data packets ── -->
+
+<!-- N1 (638,66) → Hub: 2 staggered blue packets -->
+<circle r="3" fill="#58a6ff">
+  <animateMotion path="M638,66 L706,112" dur="1.6s" repeatCount="indefinite" begin="0s"/>
+  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.9;1" dur="1.6s" repeatCount="indefinite" begin="0s"/>
+</circle>
+<circle r="3" fill="#58a6ff">
+  <animateMotion path="M638,66 L706,112" dur="1.6s" repeatCount="indefinite" begin="0.8s"/>
+  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.9;1" dur="1.6s" repeatCount="indefinite" begin="0.8s"/>
+</circle>
+
+<!-- N2 (774,66) → Hub -->
+<circle r="3" fill="#58a6ff">
+  <animateMotion path="M774,66 L706,112" dur="1.6s" repeatCount="indefinite" begin="0.3s"/>
+  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.9;1" dur="1.6s" repeatCount="indefinite" begin="0.3s"/>
+</circle>
+<circle r="3" fill="#58a6ff">
+  <animateMotion path="M774,66 L706,112" dur="1.6s" repeatCount="indefinite" begin="1.1s"/>
+  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.9;1" dur="1.6s" repeatCount="indefinite" begin="1.1s"/>
+</circle>
+
+<!-- N3 (774,158) → Hub -->
+<circle r="3" fill="#58a6ff">
+  <animateMotion path="M774,158 L706,112" dur="1.6s" repeatCount="indefinite" begin="0.6s"/>
+  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.9;1" dur="1.6s" repeatCount="indefinite" begin="0.6s"/>
+</circle>
+<circle r="3" fill="#58a6ff">
+  <animateMotion path="M774,158 L706,112" dur="1.6s" repeatCount="indefinite" begin="1.4s"/>
+  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.1;0.9;1" dur="1.6s" repeatCount="indefinite" begin="1.4s"/>
+</circle>
+
+<!-- N4 anomaly (638,158) → Hub: orange packets -->
+<circle r="3.5" fill="#f97316">
+  <animateMotion path="M638,158 L706,112" dur="2s" repeatCount="indefinite" begin="0.4s"/>
+  <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2s" repeatCount="indefinite" begin="0.4s"/>
+</circle>
+<circle r="3.5" fill="#f97316">
+  <animateMotion path="M638,158 L706,112" dur="2s" repeatCount="indefinite" begin="1.4s"/>
+  <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="2s" repeatCount="indefinite" begin="1.4s"/>
+</circle>
+
+</svg>
