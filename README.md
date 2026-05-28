@@ -65,8 +65,7 @@ I learn by building. If I want to understand a protocol or a tool, I'll usually 
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=sfrayan&show_icons=true&hide_border=true&theme=tokyonight&count_private=true" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sfrayan&layout=compact&hide_border=true&theme=tokyonight&langs_count=8" />
+<img src="./stats.svg" width="900" alt="GitHub Stats &amp; Top Languages"/>
 
 <br/>
 
