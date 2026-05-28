@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=200&section=header&text=Networks%20%26%20Cybersecurity&fontSize=42&fontAlignY=35&animation=fadeIn&desc=Infrastructure%20Security%20%C2%B7%20Cloud%20%C2%B7%20Full-Stack&descAlignY=55" width="100%"/>
+  <img src="./header.svg" width="900" alt="Networks &amp; Cybersecurity — sfrayan"/>
 </div>
 
 <h3 align="center">🔐 Cybersecurity &nbsp;·&nbsp; 🌐 Networks & Cloud &nbsp;·&nbsp; 💻 Full-Stack Dev</h3>
